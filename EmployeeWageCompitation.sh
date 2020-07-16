@@ -2,6 +2,13 @@
 echo "welcome to Employee Wage Computation"
 #............................................................................
 
+workhours ()
+{
+read -p "Enter the hours you work : " hours
+echo $hours
+}
+
+#..................................................................................
 Attendence=$(( $RANDOM % 2 + 1 ))
 if [ $Attendence -eq 1 ]
 then
