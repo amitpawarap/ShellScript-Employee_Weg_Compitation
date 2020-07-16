@@ -87,3 +87,7 @@ esac
 done
 #.......................................................................................
 
+WorkingDaysofMonth=20
+wagesofamonth=$(($dailyemploywage*$WorkingDaysofMonth))
+echo "Wages Per Month of $name is : " $wagesofamonth
+#................................................................................
