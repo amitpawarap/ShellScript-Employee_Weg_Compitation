@@ -40,8 +40,8 @@ echo "Wage of $name who does part time is : "$parttimeemploywage
 fi
 #...................................................................................
 
-while true
-do
+if [ "$employ" == "Present" ]
+then
 echo "1.Wages of the employ who does full time"
 echo "2.Wages of the employ who does part time"
 echo "3.Exit"
@@ -84,7 +84,10 @@ echo invalid choice
 ;;
 
 esac
-done
+else
+wage=0
+echo "Wage of $name is : "$wage
+fi
 #.......................................................................................
 
 WorkingDaysofMonth=20
